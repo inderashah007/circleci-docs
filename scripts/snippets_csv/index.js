@@ -27,7 +27,7 @@ const addToData = async (filePath, lineStart, lineStop) => {
       startLine: lineStart,
       endLine: lineStop,
     },
-    number: 100,
+    number: 100, // get 100 commits from `git log`
   }).then();
 
   if (logData.length) {
